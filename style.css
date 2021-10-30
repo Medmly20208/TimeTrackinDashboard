@@ -1,0 +1,259 @@
+body {
+    background-color: rgb(1, 1, 42);
+}
+
+main {
+    display: flex;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.stats {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+
+.mainreport {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.general {
+    border: 1px solid rgb(1, 1, 42);
+    border-radius: 20px;
+    background-color: rgb(68, 68, 146);
+    margin-bottom: 0px;
+    height: 300px;
+    z-index: 200;
+}
+
+.general img {
+    cursor: pointer;
+    width: 30%;
+    border: 3px solid white;
+    border-radius: 100%;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.general p {
+    color: gray;
+    margin-left: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.general h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 60px;
+}
+
+nav {
+    background-color: rgb(15, 15, 56);
+    padding: 20px;
+    color: white;
+    border: 1px solid rgb(1, 1, 42);
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-top: -15px;
+    z-index: 0;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+a:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+.bx {
+    border: 1px solid rgb(1, 1, 42);
+    background-color: rgb(68, 68, 146);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.icon {
+    margin-top: -5px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+.palal {
+    position: relative;
+    z-index: 10;
+    border-radius: 20px;
+    bottom: 20px;
+    background-color: rgb(68, 68, 146);
+}
+
+#imgcontanier1 {
+    background-color: orangered;
+    position: relative;
+    height: 20%;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#imgcontanier2 {
+    background-color: blue;
+    position: relative;
+    height: 20%;
+    overflow: hidden;
+}
+
+#imgcontanier3 {
+    background-color: red;
+    position: relative;
+    height: 20%;
+    overflow: hidden;
+}
+
+#imgcontanier4 {
+    background-color: green;
+    position: relative;
+    height: 20%;
+    overflow: hidden;
+}
+
+#imgcontanier5 {
+    background-color: purple;
+    position: relative;
+    height: 20%;
+    overflow: hidden;
+}
+
+#imgcontanier6 {
+    background-color: yellow;
+    position: relative;
+    height: 20%;
+    overflow: hidden;
+}
+
+.p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bx h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 10px;
+}
+
+.bx h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ccc;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.p h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.general img:hover {
+    border-color: orange;
+}
+
+@media screen and (max-width:800px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .mainreport {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .mainreport img {
+        width: 20%;
+        height: 20%;
+        margin-bottom: 10px;
+    }
+    .bx {
+        margin-left: 0px;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: none;
+    }
+    #imgcontanier6 {
+        height: 30%;
+    }
+    #imgcontanier5 {
+        height: 30%;
+    }
+    #imgcontanier4 {
+        height: 30%;
+    }
+    #imgcontanier3 {
+        height: 30%;
+    }
+    #imgcontanier2 {
+        height: 30%;
+    }
+    #imgcontanier1 {
+        height: 30%;
+    }
+    .palal {
+        bottom: 16px;
+        height: 230px;
+        padding: 10px 15px;
+        margin-left: 0px;
+    }
+    main {
+        margin-left: 0px;
+    }
+    .stats {
+        grid-template-columns: 1fr;
+        justify-content: space-around;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 0px;
+    }
+    nav,
+    ul {
+        padding-left: 10px;
+    }
+    .general {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-bet;
+        height: 20%;
+    }
+    .general h1 {
+        font-size: 1.6rem
+    }
+}
