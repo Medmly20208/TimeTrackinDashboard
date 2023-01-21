@@ -17,7 +17,7 @@
 
 # Built with 
 
- html,css and javascipt
+ html,css and javascript
 
 # Live demo
 
